@@ -1,0 +1,9 @@
+extends layouts
+
+block content
+    form(method="post", action="/contact-us/send")
+     h2 Send us your opinions
+     input(name="name", placeholder="Your name")
+     input(name="email", placeholder="Your e-mail")
+     textarea(name="message", placeholder="Your message")
+     button(type="submit") Submit
